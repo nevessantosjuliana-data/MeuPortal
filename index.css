@@ -1,0 +1,141 @@
+/* 1. Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+/* border: solid black 2px; */
+}
+
+/* 2. Base da Página */
+body{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+}
+/* Imagens de fundo: uma com 50% e outra com 50% */
+.fundo{
+    position: fixed;  
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.fundo-esquerda{
+    left: 0;
+background-image: url('./imgs/criancas.png');
+}
+
+.fundo-direita{
+    right: 0;
+background-image: url('./imgs/menina.png');
+}
+
+/* 3. Painel central com transparência */
+main{/* main= login */
+    width: 500px;
+    max-width: 100%;
+    min-height: 100vh;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgba(255, 255,255,0.8);
+}
+
+/* 4. Textos e Logo */
+.login h1{
+    font-size: 17.5px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.logo{
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    margin: 4px auto 36px; 
+
+
+}
+
+.login h2{
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    /* Configurações para deixar da mesma largura da logo */
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 40px; 
+ }
+
+ /* 5. Formulário */
+input[type="text"],
+input[type="password"]{
+    display: block;
+
+    /* Alteração de largura */
+    width: 320px;
+    padding: 14px 12px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+
+    background-color: rgb(255,255,255);
+    border: solid #c8c8c8 1px;
+    /*border-radius: 20px para arredondar as bordas das caixas de login e senha*/
+ }
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border-color: #4aa3e8;
+}
+
+button{
+    padding: 12px 22px; /* espaçamento interno entre o texto e a borda */
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d73220;
+    border: none; /*ou 0 (zero) ou 0px*/
+    cursor: pointer;    
+}
+
+button:hover{
+    background-color: #636262;
+}
+
+/* 6. links */
+.links{
+    margin-bottom: 10px;
+    font-size: 15px;
+    /* voltar aqui */
+  }
+
+a{
+    color: red;
+}
+
+
